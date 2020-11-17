@@ -37,5 +37,17 @@ public class MovieCustomAdapter extends BaseAdapter {
         return null;
     }
 
-   
+    class ViewHolder
+    {
+        TextView title;
+        TextView rating;
+        TextView description;
+
+        public ViewHolder(View view)
+        {
+            title=view.findViewById(R.id.movieTitle);
+            rating=view.findViewById(R.id.rating);
+            description=view.findViewById(R.id.description);
+        }
+    }
 }
