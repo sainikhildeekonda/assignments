@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.movieinfo.R;
@@ -51,6 +52,7 @@ public class MovieCustomAdapter extends BaseAdapter {
         viewHolder.title.setText(movies.getTitle());
         viewHolder.rating.setText(movies.getRating());
         viewHolder.description.setText(movies.getDescription());
+        viewHolder.imageView.setImageResource(movies.getMovieImages());
         return view;
     }
 
@@ -59,12 +61,14 @@ public class MovieCustomAdapter extends BaseAdapter {
         TextView title;
         TextView rating;
         TextView description;
+        ImageView imageView;
 
         public ViewHolder(View view)
         {
             title=view.findViewById(R.id.movieTitle);
             rating=view.findViewById(R.id.rating);
             description=view.findViewById(R.id.description);
+            imageView=view.findViewById(R.id.imageView);
         }
     }
 
