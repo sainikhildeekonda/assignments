@@ -24,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
         movies.add(new Movie("ANDHADHUN", "Best Suspense Thriller", "8.5/10", R.drawable.andhadhun));
         movies.add(new Movie("LAGAAN", "Feel Good Movie", "9/10", R.drawable.lagaan));
         movies.add(new Movie("PADMAAVAT", "Best Historical movie", "8/10", R.drawable.padmaavat));
+        movies.add(new Movie("BAJIRAO MASTANI", "Best Historical movie", "8/10", R.drawable.bajirao));
+        movies.add(new Movie("DIL BECHARA", "Best Historical movie", "8/10", R.drawable.dilbechara));
+        movies.add(new Movie("GULLY BOY", "Best Historical movie", "8/10", R.drawable.gully));
+        movies.add(new Movie("JODHA AKBAR", "Best Historical movie", "8/10", R.drawable.jodha));
+        movies.add(new Movie("SPECIAL 26", "Best Historical movie", "8/10", R.drawable.special26));
         return movies;
     }
     @Override
